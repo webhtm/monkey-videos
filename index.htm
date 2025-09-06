@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>WEBHTM's Monkey Videos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: linear-gradient(135deg, #5d4037, #3e2723);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 1.8rem;
+      font-weight: 300;
+      background: linear-gradient(to right, #6d4c41, #4e342e);
+      color: #f5f5dc;
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+    .video-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      width: 95%;
+      max-width: 1200px;
+      margin: 20px 0;
+    }
+    .video-card {
+      background: linear-gradient(145deg, #4e342e, #3e2723);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.2s ease;
+    }
+    .video-card:hover {
+      transform: scale(1.02);
+    }
+    .video-title {
+      font-size: 1rem;
+      font-weight: 300;
+      padding: 8px 10px;
+      background: linear-gradient(to right, #795548, #5d4037);
+      text-align: center;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+    .video-frame {
+      width: 100%;
+      display: block;
+    }
+    @media (max-width: 600px) {
+      header { font-size: 1.4rem; }
+      .video-title { font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>🐒 WEBHTMS's Monkey Videos 🐒</header>
+  <div class="video-container">
+
+    <div class="video-card">
+      <div class="video-title">A baby monkey chilling</div>
+      <video class="video-frame" controls>
+        <source src="https://archive.org/download/monkey-vids/12798411-uhd_3840_2160_24fps.mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+    </div>
+
+    <div class="video-card">
+      <div class="video-title">Monkeys playing</div>
+      <video class="video-frame" controls>
+        <source src="https://archive.org/download/monkey-vids/12805411_2560_1440_50fps.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div class="video-card">
+      <div class="video-title">A baby monkey eating</div>
+      <video class="video-frame" controls>
+        <source src="https://archive.org/download/monkey-vids/2436088-uhd_2560_1440_25fps.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    
+    
+
+    <div class="video-card">
+      <div class="video-title">A monkey picking fleas</div>
+      <video class="video-frame" controls>
+        <source src="https://archive.org/download/monkey-vids/854771-uhd_3840_2160_25fps.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+</body>
+</html>
